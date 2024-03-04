@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tej Rasila International Sr. Sec. School Admission Form 2024</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Tej Rasila International Sr. Sec. School Admission Form 2024</h1>
+    <div class="container">
+      <form action="/submit-admission-form" method="POST" id="admissionForm">
+        <label for="permanent-education-number"
+          >PERMANENT EDUCATION NUMBER:</label
+        ><br />
+        <input
+          type="number"
+          id="permanent-education-number"
+          name="permanentEducationNumber"
+          required
+        /><br />
+        <label for="candidate-name">CANDIDATE NAME:</label><br />
+        <input
+          type="text"
+          id="candidate-name"
+          name="candidateName"
+          required
+        /><br />
+        <label for="father-guardian-name">FATHER/GUARDIAN NAME:</label><br />
+        <input
+          type="text"
+          id="father-guardian-name"
+          name="fatherGuardianName"
+          required
+        /><br />
+        <label for="mother-name">MOTHER NAME:</label><br />
+        <input type="text" id="mother-name" name="motherName" required /><br />
+        <label for="gender">GENDER:</label><br />
+        <select id="gender" name="gender">
+          <option value="MALE">MALE</option>
+          <option value="FEMALE">FEMALE</option>
+          <option value="TRANSGENDER">Other</option></select
+        ><br />
+        <label for="dob">D.O.B:</label><br />
+        <input type="date" id="dob" name="dob" required /><br />
+        <label for="mobile">Mobile:</label><br />
+        <input type="number" id="mobile" name="mobile" required /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="permanent-address">PERMANENT ADDRESS:</label><br />
+        <textarea id="permanent-address" name="permanentAddress" required>
+        </textarea
+        ><br />
+        <label for="present-address">PRESENT ADDRESS:</label><br />
+        <textarea id="present-address" name="presentAddress" required></textarea
+        ><br />
+        <label for="religion">RELIGION:</label><br />
+        <select id="religion" name="religion" onchange="showOtherInput()">
+          <option value="Select-religion">Select Religion</option>
+          <option value="hindu">Hindu</option>
+          <option value="sikh">Sikh</option>
+          <option value="christian">Christian</option>
+          <option value="Muslim">Muslim</option>
+          <option value="other">Other</option>
+        </select>
+        <input
+          type="text"
+          name="other"
+          id="otherInput"
+          style="display: none"
+          placeholder="Specify other religion"
+        />
+        <label for="caste">Caste:</label><br />
+        <select id="Caste" name="Caste">
+          <option value="Select-Caste">Select Caste</option>
+          <option value="general">GENERAL</option>
+          <option value="obc">OBS</option>
+          <option value="sc">SC</option>
+          <option value="st">ST</option>
+          <option value="other1">Other</option>
+        </select>
+        <input type="text" name="other1" placeholder="Specify Caste" />
+        <br />
+        <label for="nationality">Nationality</label>
+        <input type="text" id="nationality">
+        <label for="father-guardian-occupation"
+          >Father/Guardian Occupation:</label
+        ><br />
+        <input
+          type="text"
+          id="father-guardian-occupation"
+          name="fatherGuardianOccupation"
+        /><br />
+        <label for="mother-occupation"
+          >Mother Occupation:</label
+        ><br />
+        <input
+          type="text"
+          id="mother-occupation"
+          name="motherOccupation"
+        /><br />
+        <label for="educational-qualification-of-Father"
+          >Educational Qualification of Father:</label
+        ><br />
+        <select name="father-guardian-occupation" id="father-guardian-occupation">
+          <option value="select-qualification">Select Qualification</option>
+          <option value="illitrate">Illitrate</option>
+          <option value="middlepass">Middle Pass</option>
+          <option value="matriculation">Matriculation</option>
+          <option value="senior-secondry">Senior Secondry</option>
+          <option value="graduate">Graduate</option>
+          <option value="post-graduate">Post Graduate</option>
+        </select><br>
+        <label for="educational-qualification-of-mother"
+          >Educational Qualification of Mother:</label
+        ><br />
+        <select name="father-guardian-occupation" id="father-guardian-occupation">
+          <option value="select-qualification">Select Qualification</option>
+          <option value="illitrate">Illitrate</option>
+          <option value="middlepass">Middle Pass</option>
+          <option value="matriculation">Matriculation</option>
+          <option value="senior-secondry">Senior Secondry</option>
+          <option value="graduate">Graduate</option>
+          <option value="post-graduate">Post Graduate</option>
+        </select><br>
+        <label for="aadhar-no">Aadhaar No. of student:</label><br />
+        <input type="text" id="aadhar-no" name="aadharNo" required /><br />
+        <label for="student-bank-account">Student Bank A/c No:</label><br />
+        <input
+          type="text"
+          id="student-bank-account"
+          name="studentBankAccount"
+        /><br />
+        <label for="bank-name">Bank Name:</label><br />
+        <input type="text" id="bank-name" name="bankName" /><br />
+        <label for="pseb-registration-no">PSEB. Registration No:</label><br />
+        <input
+          type="text"
+          id="pseb-registration-no"
+          name="psebRegistrationNo"
+        /><br />
+        <h3>Previous School Attended</h3>
+        <label for="previous-school">Name of Previous School:</label><br />
+        <input type="text" id="previous-school" name="previous-school" /><br />
+        <label for="board">Board:</label><br />
+        <input type="text" id="board" name="board" /><br />
+
+        <h3>Health Status of Child</h3>
+        <label for="health-status">Health Status:</label><br />
+        <input type="text" id="health-status" name="health-status" /><br />
+        <label for="blood-group">Blood Group:</label><br />
+        <input type="text" id="blood-group" name="blood-group" /><br />
+
+        <h3>Siblings Studying in this School</h3>
+        <label for="sibling1">Name of Sibling 1:</label><br />
+        <input type="text" id="sibling1" name="sibling1" /><br />
+        <label for="sibling2">Name of Sibling 2:</label><br />
+        <input type="text" id="sibling2" name="sibling2" /><br />
+        <label for="sibling3">Name of Sibling 3:</label><br />
+        <input type="text" id="sibling3" name="sibling3" /><br />
+
+        <h3>Previous Class</h3>
+        <label for="previous-class">Class:</label><br />
+        <input type="text" id="previous-class" name="previous-class" /><br />
+
+        <h3>Aadhaar Card Details</h3>
+        <label for="aadhaar-child">Aadhaar Card of the Child:</label><br />
+        <input type="text" id="aadhaar-child" name="aadhaar-child" /><br />
+        <label for="aadhaar-father">Aadhaar Card of the Father:</label><br />
+        <input type="text" id="aadhaar-father" name="aadhaar-father" /><br />
+        <label for="aadhaar-mother">Aadhaar Card of the Mother:</label><br />
+        <input type="text" id="aadhaar-mother" name="aadhaar-mother" /><br />
+
+        <h3>Birth Certificate</h3>
+        <label for="birth-certificate">Birth Certificate of the Child:</label
+        ><br />
+        <input
+          type="text"
+          id="birth-certificate"
+          name="birth-certificate"
+        /><br />
+
+        <h3>Caste Certificate (if applicable)</h3>
+        <label for="caste-certificate">Caste Certificate:</label><br />
+        <input
+          type="text"
+          id="caste-certificate"
+          name="caste-certificate"
+        /><br />
+
+        <h3>BPL Card (if applicable)</h3>
+        <label for="bpl-card">BPL Card:</label><br />
+        <input type="text" id="bpl-card" name="bpl-card" /><br />
+
+        <h3>
+          Transfer Certificate / Migration / DMC / Report Card of Previous
+          School Attended
+        </h3>
+        <label for="tc">TC/Migration/DMC/Report Card:</label><br />
+        <input type="text" id="tc" name="tc" /><br />
+
+        <h3>Pictures</h3>
+        <label for="father-picture">Picture of the Father:</label><br />
+        <input type="file" id="father-picture" name="father-picture" /><br />
+        <label for="mother-picture">Picture of the Mother:</label><br />
+        <input type="file" id="mother-picture" name="mother-picture" /><br />
+        <label for="guardian-picture"
+          >Picture of the Guardian (if applicable):</label
+        ><br />
+        <input
+          type="file"
+          id="guardian-picture"
+          name="guardian-picture"
+        /><br />
+
+        <h3>Admission Details</h3>
+        <label for="date-of-admission">Date of Admission:</label><br />
+        <input
+          type="date"
+          id="date-of-admission"
+          name="date-of-admission"
+        /><br />
+        <label for="percentage">Percentage:</label><br />
+        <input type="text" id="percentage" name="percentage" /><br />
+        <label for="admission-number">Admission Number:</label><br />
+        <input
+          type="text"
+          id="admission-number"
+          name="admission-number"
+        /><br />
+
+        <h3>Concession Details</h3>
+        <label for="concession">Concession on the basis of:</label><br />
+        <select id="concession" name="concession">
+          <option value="landless-laborer">Landless Laborer</option>
+          <option value="orphan">Orphan</option>
+          <option value="widow-without-land">Widow without Land</option>
+          <option value="other">Other</option></select
+        ><br />
+        <h3>Declaration</h3>
+        <p>
+          I hereby solemnly declare that all the information provided above by
+          me is correct to the best of my knowledge and belief and that I have
+          reconfirmed the above entries which I certify to be correct. I request
+          that admission may please be granted to my ward under the rules.
+        </p>
+        <input type="checkbox" id="declaration" name="declaration" required />
+        <label for="declaration">I agree to the above declaration</label><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
